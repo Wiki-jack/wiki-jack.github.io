@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Linux CLI</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<!-- Internal CSS -->
+<style> 
+footer{
+    text-align: center;
+}
+</style>
+<body>
+	<header>
+		<h1>Linux CLI</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">About</a></li>
+				<li><a href="tableofcontents.html">Table of Contents</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<article>
+			<header>
+				<p>Published on <time datetime="2023-05-09">May 10, 2023</time></p>
+			</header>
+<!-- Navigation -->
+<h3>Navigation</h3>
+<p>cd : allows you to move into dir</p>
+<p>ls : list content of dir</p>
+<p>pwd : prints path to dir</p>
+<p>mkdir : make dir/folder</p>
+<p>rmdir : deletes dir</p>
+<!-- file management -->
+<p><strong>File Management</strong></p>
+<p>touch (name) : creates text file with specified name</p>
+<p>cp ( file you want to copy ) ( where you want to copy it to ) : copyies file to specified place</p>
+<p>mv : move or renames specfied dir/folder or file</p>
+<p>rm -r : deletes folder or file and all its contents</p>
+<p>wget : allows you to download some things based on their web url</p>
+<p>lsblk : shows drives and their directories</p>
+<!-- package manager -->
+<p><strong>Package manager</strong></p>
+<!-- apt -->
+<p><em>apt</em> : normally default package manager on debian based systems</p>
+<p>apt commands:</p>
+<p>apt install (package name) : installs package</p>
+<p>apt remove (name) : remove package</p>
+<p>apt update -y : updates with yes to all</p>
+<p>apt upgrade -y : updates and says yes to all</p>
+<p>apt search : searches for packages</p>
+<!-- snap -->
+<p><em>snap</em> : can be added to pretty much any distro with a little work but is default to ubuntu systems except turnkey containers and maybe docker</p>
+<p>snap commands:</p>
+<p>snap install : installs specfied package</p>
+<p>snap remove : removes specified packages</p>
+<!-- flatpak -->
+<p><em>flatpak</em> : can be pretty much added to any distro</p>
+<p>flatpak commands:</p>
+<p>flatpak install : installs package</p>
+<p>flatpak remove : removes packages</p>
+<!-- dnf -->
+<p><em>dnf</em> : normally default on fedora and RHEL systems</p>
+<p>dnf commands:</p>
+<p>dnf install : installs package</p>
+<p>dnf remove : removes package</p>
+<!-- pacman -->
+<p><em>pacman</em> : normally default on arch based systems</p>
+<p>pacman commands:</p>
+<p>pacman -S : installs specified package</p>
+<p>pacman -Rsc : removes specfied package</p>
+<p>pacman -Ss : seaches for specified package</p>
+<p>pacman -Syu : updates pretty much everything</p>
+<!-- zypper -->
+<p><em>zypper</em> : Normally found on opensuse based systems</p>
+<p>zypper commands:</p>
+<p>zypper patch : patches system</p>
+<p>zypper install : installs package</p>
+<p>zypper search -t : searches for package</p>
+<p>zypper remove : removes packages</p>
+<!-- sys info -->
+<p><strong>Sys Info</strong></p>
+<p>uname -a : lists info about system</p>
+<p>neofetch : lists sys info ( installed program )</p>
+<p>htop : displays info about sys info and resources ( installed program )</p>
+<p>uptime : shows how long the system has been up for</p>
+<p>lsblk : lists drives and partition</p>
+<p>mc : cli based file manager ( midnight commander )</p>
+<!-- network management -->
+<p><strong>Network Management</strong></p>
+<p>ifconfig : shows network stats ig</p>
+<p>ip address : shows network</p>
+<p>whois ( domain ) : shows info about specfied domain</p>
+<p>ping ( ip ) : allows you to ping ip's and domains</p>
+<p>netstat : display network info</p>
+<p>traceroute ( ip ) : display route that packages take</p>
+<p>ssh: ssh (user)@(ip address)</p>
+<!-- users -->
+<p><strong>Users</strong></p>
+<p>whoami : just shows what user you are logging in as</p>
+<p>su : allows you to change user</p>
+<p>sudo : allows me to use the sudo commands aka do things as root user ( only able to use sudo if user is in the sudo group )</p>
+<p>chmod : changes permissions of file or dir ( EX.
+chmod +x (file name) allows you to excute bash scripts however file must be specified with .sh at end and maybe a shebang &lt; #!/bin/bash&gt; to be excuted as such)</p>
+<p><strong>Misc</strong></p>
+<p>clear : just clears the terminal</p>
+    <!-- END -->
+</article>
+	</main>
+    <!-- footer -->
+    <footer>
+		<p>&copy; Jack Little 2023</p>
+	</footer>
+</body>
+</html>

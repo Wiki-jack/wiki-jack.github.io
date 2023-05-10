@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Nmap</title>
+	
+</head>
+<!-- Internal CSS -->
+<style> 
+footer{
+    text-align: center;
+}
+</style>
+<body>
+	<header>
+
+		<h1>Nmap</h1>
+		<nav>
+			<ul>
+				<li><a href="tableofcontents.html">Table of Contents</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<article>
+			<header>
+				<p>Published on <time datetime="2023-05-09">May 10, 2023</time></p>
+
+			</header>
+			<p><strong>Nmap Basics</strong></p>
+			<p>Nmap is a network mapper, it can be used for many things from port scanning to bruteforing port 22 with Nmap scripts. PS. Their is also a gui called Zenmap</p>
+			<p><strong>Nmap has 3 basic port scan types</strong>:</p>
+			<p>TCP connect scans : (-sT)</p>
+			<p>SYN &quot;half open&quot; scans : (-sS)</p>
+			<p>UDP scans : (-sU) I think</p>
+			<p><strong>Less common port scans</strong> :</p>
+			<p>TCP null scans : (-sN)</p>
+			<p>TCP fin scans : (-sF)</p>
+			<p>TCP xmas Scans : (-sX)</p>
+			<p>Except for UDP scans most work similar however the way they work differs. To understand TCP connect scans you have to understand how a &quot;3 way handshake works&quot; basically it works like this, the attacking machine aka your pc or laptop send a tcp request to the target machine then the target machine sends back SYN/ACK response and the attacking machine sends back a ACK request. Basically it just looks like this :</p>
+			<p>(Your Machine) sends ~~&gt; SYN (Target machine) then sends you back ~&gt; SYN/ACK and finally you respond (Your machine) sends ~&gt; SYN, Now the 3 way handshake has been completed.</p>
+			<p>SYN and ACK are flag sets!</p>
+			<p>If a port is closed when scanning nmap will respond with a Rst aka reset flag, in this way nmap marks that port as closed.</p>
+			<p><strong>SYN Scans</strong></p>
+			<p>Syn scans are used to scan TCP port-range of a target, similar to tcp request but work different.</p>
+			<p>Syn scans are often referred to as &quot;half open&quot; scans or &quot;stealth&quot; scans, Unlike how TCP scans, Syn scans send back a Rst TCP packet.</p>
+			<p><strong>Nmap Switches</strong></p>
+			<p>-o (detects operating systems target is running on)</p>
+			<p>-sV (detects services)</p>
+			<p>-vv ( their is -v but i have use it this just increases the amount of info nmap will output)</p>
+			<p>-oN (nmap output will save in normal format)</p>
+			<p>-A (scans more aggressively than normal)</p>
+			<p>-t (increases the timing of scan using -t 1-5 higher the level the more &quot;noisy&quot;)</p>
+			<p>-p (just tells nmap to scan specified ports)</p>
+			<p>-p-(dns) : tells nmap to scan domain</p>
+			<p>--scipt- : tells nmap to use specified script</p>
+		</article>
+	</main>
+
+	<footer>
+		<p>&copy; Jack Little 2023</p>
+	</footer>
+</body>
+</html>
