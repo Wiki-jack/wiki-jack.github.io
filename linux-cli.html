@@ -28,86 +28,156 @@ footer{
 				<p>Published on <time datetime="2023-05-09">May 10, 2023</time></p>
 			</header>
 <!-- Navigation -->
-<h3>Navigation</h3>
-<p>cd : allows you to move into dir</p>
-<p>ls : list content of dir</p>
-<p>pwd : prints path to dir</p>
-<p>mkdir : make dir/folder</p>
-<p>rmdir : deletes dir</p>
-<!-- file management -->
-<p><strong>File Management</strong></p>
-<p>touch (name) : creates text file with specified name</p>
-<p>cp ( file you want to copy ) ( where you want to copy it to ) : copyies file to specified place</p>
-<p>mv : move or renames specfied dir/folder or file</p>
-<p>rm -r : deletes folder or file and all its contents</p>
-<p>wget : allows you to download some things based on their web url</p>
-<p>lsblk : shows drives and their directories</p>
-<!-- package manager -->
-<p><strong>Package manager</strong></p>
-<!-- apt -->
-<p><em>apt</em> : normally default package manager on debian based systems</p>
-<p>apt commands:</p>
-<p>apt install (package name) : installs package</p>
-<p>apt remove (name) : remove package</p>
-<p>apt update -y : updates with yes to all</p>
-<p>apt upgrade -y : updates and says yes to all</p>
-<p>apt search : searches for packages</p>
-<!-- snap -->
-<p><em>snap</em> : can be added to pretty much any distro with a little work but is default to ubuntu systems except turnkey containers and maybe docker</p>
-<p>snap commands:</p>
-<p>snap install : installs specfied package</p>
-<p>snap remove : removes specified packages</p>
-<!-- flatpak -->
-<p><em>flatpak</em> : can be pretty much added to any distro</p>
-<p>flatpak commands:</p>
-<p>flatpak install : installs package</p>
-<p>flatpak remove : removes packages</p>
-<!-- dnf -->
-<p><em>dnf</em> : normally default on fedora and RHEL systems</p>
-<p>dnf commands:</p>
-<p>dnf install : installs package</p>
-<p>dnf remove : removes package</p>
-<!-- pacman -->
-<p><em>pacman</em> : normally default on arch based systems</p>
-<p>pacman commands:</p>
-<p>pacman -S : installs specified package</p>
-<p>pacman -Rsc : removes specfied package</p>
-<p>pacman -Ss : seaches for specified package</p>
-<p>pacman -Syu : updates pretty much everything</p>
-<!-- zypper -->
-<p><em>zypper</em> : Normally found on opensuse based systems</p>
-<p>zypper commands:</p>
-<p>zypper patch : patches system</p>
-<p>zypper install : installs package</p>
-<p>zypper search -t : searches for package</p>
-<p>zypper remove : removes packages</p>
-<!-- sys info -->
-<p><strong>Sys Info</strong></p>
-<p>uname -a : lists info about system</p>
-<p>neofetch : lists sys info ( installed program )</p>
-<p>htop : displays info about sys info and resources ( installed program )</p>
-<p>uptime : shows how long the system has been up for</p>
-<p>lsblk : lists drives and partition</p>
-<p>mc : cli based file manager ( midnight commander )</p>
-<!-- network management -->
-<p><strong>Network Management</strong></p>
-<p>ifconfig : shows network stats ig</p>
-<p>ip address : shows network</p>
-<p>whois ( domain ) : shows info about specfied domain</p>
-<p>ping ( ip ) : allows you to ping ip's and domains</p>
-<p>netstat : display network info</p>
-<p>traceroute ( ip ) : display route that packages take</p>
-<p>ssh: ssh (user)@(ip address)</p>
-<!-- users -->
-<p><strong>Users</strong></p>
-<p>whoami : just shows what user you are logging in as</p>
-<p>su : allows you to change user</p>
-<p>sudo : allows me to use the sudo commands aka do things as root user ( only able to use sudo if user is in the sudo group )</p>
-<p>chmod : changes permissions of file or dir ( EX.
-chmod +x (file name) allows you to excute bash scripts however file must be specified with .sh at end and maybe a shebang &lt; #!/bin/bash&gt; to be excuted as such)</p>
-<p><strong>Misc</strong></p>
-<p>clear : just clears the terminal</p>
-    <!-- END -->
+ <strong>Navigation</strong>
+    </p>
+    <p>cd : allows you to move into dir</p>
+    <p>ls : list content of dir</p>
+    <p>pwd : prints path to dir</p>
+    <p>mv : move specfied file or folder/dir</p>
+    <p>find : finds stuff</p>
+    <p>mkdir : make dir/folder</p>
+    <p>rmdir : deletes dir</p>
+    <p>/etc : location most system files are stored</p>
+    <p>/var : one of the main root folders</p>
+    <p>/root : folder for "root" user</p>
+    <p>/tmp : dir used to store temporary files</p>
+    <p>
+      <strong>File Management</strong>
+    </p>
+    <p>touch (name) : creates text file with specified name</p>
+    <p>cp ( file you want to copy ) ( where you want to copy it to ) : copyies file to specified place</p>
+    <p>mv : move or renames specfied dir/folder or file</p>
+    <p>rm -r : deletes folder or file and all its contents</p>
+    <p>wget : allows you to download some things based on their web url</p>
+    <p>lsblk : shows drives and their directories</p>
+    <p>cat : shows content in files</p>
+    <p>scp : transfers files securly through ssh</p>
+    <p>
+      <strong>Package manager</strong>
+    </p>
+    <p>apt : normally default package manager on debian based systems</p>
+    <p>
+      <strong>apt commands</strong>
+    </p>
+    <p>apt install (package name) : installs package</p>
+    <p>apt remove (name) : remove package</p>
+    <p>apt update -y : updates with yes to all</p>
+    <p>apt upgrade -y : updates and says yes to all</p>
+    <p>apt search : searches for packages</p>
+    <p>snap : can be added to pretty much any distro with a little work but is default to ubuntu systems except turnkey containers and maybe docker</p>
+    <p>
+      <strong>snap commands</strong>
+    </p>
+    <p>snap install : installs specfied package</p>
+    <p>snap remove : removes specified packages</p>
+    <p>flatpak : can be pretty much added to any distro</p>
+    <p>
+      <strong>flatpak commands</strong>
+    </p>
+    <p>flatpak install : installs package</p>
+    <p>flatpak remove : removes packages</p>
+    <p>dnf : normally default on fedora and RHEL systems</p>
+    <p>
+      <strong>dnf commands</strong>
+    </p>
+    <p>dnf install : installs package</p>
+    <p>dnf remove : removes package</p>
+    <p>pacman : normally default on arch based systems</p>
+    <p>
+      <strong>pacman commands</strong>
+    </p>
+    <p>pacman -S : installs specified package</p>
+    <p>pacman -Rsc : removes specfied package</p>
+    <p>pacman -Ss : seaches for specified package</p>
+    <p>pacman -Syu : updates pretty much everything</p>
+    <p>zypper : Normally found on opensuse based systems</p>
+    <p>
+      <strong>zypper commands</strong>
+    </p>
+    <p>zypper patch : patches system</p>
+    <p>zypper install : installs package</p>
+    <p>zypper search -t : searches for package</p>
+    <p>zypper remove : removes packages</p>
+    <p>
+      <strong>Sys Info</strong>
+    </p>
+    <p>$ : used to indicate a command is being ran as admin</p>
+    <p>" ~ " : used to represnt users home dir</p>
+    <p>uname -a : lists info about system</p>
+    <p>neofetch : lists sys info ( installed program )</p>
+    <p>htop : displays info about sys info and resources ( installed program )</p>
+    <p>uptime : shows how long the system has been up for</p>
+    <p>lsblk : lists drives and partition</p>
+    <p>mc : cli based file manager ( midnight commander )</p>
+    <p>ps : provides list of running system process</p>
+    <p>top : real time stats of sys programs</p>
+    <p>kill : kills process ( EX. kill pid# )</p>
+    <p>systemctl : system management and service management ( EX. sudo systemctl status apache2 )</p>
+    <p>
+      <em>systemctl commands :</em>
+    </p>
+    <ul>
+      <li>
+        <p>systemctl subcommand argument</p>
+      </li>
+      <li>
+        <p>restart : self explainatory</p>
+      </li>
+      <li>
+        <p>reboot : reboots</p>
+      </li>
+      <li>
+        <p>poweroff : shuts down</p>
+      </li>
+      <li>
+        <p>set-default : sets a service as default</p>
+      </li>
+      <li>
+        <p>rescue : switchs to rescue mode for troubleshooting</p>
+      </li>
+      <li>
+        <p>start : starts service</p>
+      </li>
+      <li>
+        <p>stop : stops service</p>
+      </li>
+      <li>
+        <p>mask : prevents service from starting for any reason</p>
+      </li>
+      <li>
+        <p>enable : allows me to start service at boot</p>
+      </li>
+      <li>
+        <p>disble : prevents me from starting service at boot</p>
+      </li>
+      <li>
+        <p>is-active : prints current and start up status of service</p>
+      </li>
+      <li>
+        <p>is-enable : same but for enabled command</p>
+      </li>
+    </ul>
+    <p>
+      <strong>Network Management</strong>
+    </p>
+    <p>ifconfig : shows network stats ig</p>
+    <p>ip address : shows network</p>
+    <p>whois ( domain ) : shows info about specfied domain</p>
+    <p>ping ( ip ) : allows you to ping ip's and domains</p>
+    <p>netstat : display network info</p>
+    <p>traceroute ( ip ) : display route that packages take</p>
+    <p>ssh: ssh (user)@(ip address)</p>
+    <p>
+      <strong>Users</strong>
+    </p>
+    <p>whoami : just shows what user you are logging in as</p>
+    <p>su : allows you to change user</p>
+    <p>sudo : allows me to use the sudo commands aka do things as root user ( only able to use sudo if user is in the sudo group )</p>
+    <p>chmod : changes permissions of file or dir ( EX. chmod +x (file name) allows you to excute bash scripts however file must be specified with .sh at end and maybe a shebang &lt; #!/bin/bash&gt; to be excuted as such)</p>
+    <p>
+      <strong>Misc</strong>
+    </p>
+    <p>clear : just clears the terminal</p>
 </article>
 	</main>
     <!-- footer -->
