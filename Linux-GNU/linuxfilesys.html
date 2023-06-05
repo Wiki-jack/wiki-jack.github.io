@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Linux File System</title>
+</head>
+<body>
+<!-- Insert Page Header Here all other text should be placed below here -->
+    <h1>The Linux File System</h1>
+<!--   Nav Section That links back to The Table of Contents Page   -->
+    <nav>
+        <ul>
+            <li><a href="https://wiki-jack.github.io/tableofcontents.html">Table of Contents</a></li>
+        </ul>
+    </nav>
+    <h1 id="linux-file-system-directories">Linux File System Directories</h1>
+<p><strong>/bin</strong></p>
+<p>the bin directory contains binaries, basically it contains some of the apps and programs you can run.</p>
+<p>you can find the &quot;ls&quot; program (lists file directories) in the /bin dir.</p>
+<p><strong>/boot</strong></p>
+<p>the /boot dir contains files requried for system boot.</p>
+<p><strong>/dev</strong></p>
+<p>/dev contains device files, generated at boot. EX. if you plugged in a usb device a new enrty will be added in the /dev dir.</p>
+<p><strong>/etc</strong></p>
+<p>/etc is a dir, you could say it stands for &quot;Everything configurable&quot;, it contains most of the system wide configuration files.</p>
+<p><strong>/home</strong></p>
+<p>contains users personal directories.</p>
+<p><strong>/lib</strong></p>
+<p>/lib is also called &quot;libraries&quot;, contain files of code your apps can use. EX. contains snippets of code apps can use to draw windows on your desktop.</p>
+<p>Their are more lib dir around the system, one special lib file is &quot;/is&quot; it contains all important kernel modules, this includes drivers for video cards, sound cards, wiki, printer, etc.</p>
+<p><strong>/media</strong></p>
+<p>/media is a dir where external storage will be auto mounted. EX. you plug in a usb that has a fat32 partition format, that partition containing your files will most likey be found in this dir.</p>
+<p><strong>/mnt</strong></p>
+<p>/mnt file dir is where manually mounted devices or partions are put, its not ofen used anymore.</p>
+<p><strong>/opt</strong></p>
+<p>/opt file dir is often where software you compile sometimes is placed by the system. Some files may also land in /usr/local dir, where files land is completely determined by the develeper of the application.</p>
+<p><strong>/prof</strong></p>
+<p>/proc is a virtual dir, it contains info about your computer. Ex. info about your cpu and linux kernel your system is running.</p>
+<p><strong>/root</strong></p>
+<p>/root is the home dir of the superuser(aka administrator), it is sepreate from user home directories.</p>
+<p><strong>/run</strong></p>
+<p>/run is a dir that is used by system processes and is used to store temp data for various reasons.</p>
+<p><strong>/sbin</strong></p>
+<p>/sbin is simular to /bin however it contains apps that only the superuser will need, these apps can be used with the &quot;sudo&quot; command or by accessing the super user account and running files that way.</p>
+<p><strong>/usr</strong></p>
+<p>/usr dir is where the users home dir were orignally kept on the unix system. now replaced by the /home dir, now you can find various stuff in the /usr dir including apps, libarie, documents, wallpapers, icons, and various other things that need to be shared by apps and services.</p>
+<p>You will also find bin, sbin, and lib dir in the /usr dir.</p>
+<p><strong>/srv</strong></p>
+<p>/srv dir is another virual dir, also contains info from devices connected to your computer. In some cases those devices can be manipulted in this dir.</p>
+<p><strong>/tmp</strong></p>
+<p>/tmp contains temp files, normally things are placed in this dir by running applications so they can be used tempularly.</p>
+<p><strong>/var</strong></p>
+<p>/var was orignally used for varibles, meaning that files in it changed frequently, now many file dir do the same thing as the /var dir so not all varible files can be found in it.</p>
+<p>This dir normally contains system logs, and spools &quot;tasks&quot; that are sent to a shared printer that is also doing other jobs.</p>
+
+<!-- End of page -->
+</body>
+</html>
